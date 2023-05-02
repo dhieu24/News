@@ -38,3 +38,6 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts')->middleware('auth');
 Route::post('/posts', [PostController::class, 'retrieve']);                              
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
