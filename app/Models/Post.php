@@ -16,7 +16,7 @@ class Post extends Model
         'pubdate',
         'title',
         'source',
-        'link',
+        'link'
     ];
 
     public function tags(){
