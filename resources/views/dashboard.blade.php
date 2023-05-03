@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<title>News</title>
 @section('content')
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <div class="flex justify-center">
@@ -22,7 +22,7 @@
                     <p class="mt-2 text-sm text-red-600 dark:text-red-500 hidden" id="keyword-title-error"><span class="font-medium">Please allow either keyword in title exists or keyword in article exists at one time.</span></p>
                 </div>
                 <div>
-                    <label for="validationDefaultUsername" class="form-label" data-error="Please enter a country name">From country:</label>
+                <label for="keyword-input" class="block text-gray-700 font-bold mb-2">From country: </label>
                     <div class="input-group" id="country-input">
                         <button 
                             class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center 
@@ -44,11 +44,7 @@
                     <p class="mt-2 text-sm text-red-600 dark:text-red-500 hidden" id="country-error"><span class="font-medium">Please choose a maximum of 5 countries</span></p>
                 </div>
                 <div>
-                    <label 
-                        for="validationDefault03" 
-                        class="form-label" 
-                        data-error="Please choose a maximum of 5 categories">Category: 
-                    </label>
+                <label for="keyword-input" class="block text-gray-700 font-bold mb-2">Category: </label>
                     <div class="dropdown">
                         <button 
                             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center 
@@ -70,13 +66,7 @@
                     <p class="mt-2 text-sm text-red-600 dark:text-red-500 hidden" id="category-error"><span class="font-medium">Please choose a maximum of 5 categories</span></p>
                 </div>
                 <div>
-                    <label 
-                        for="validationDefault04" 
-                        class="form-label"
-                        data-error="Please choose a valid language"
-                        >Language: 
-                    </label>
-
+                    <label for="keyword-input" class="block text-gray-700 font-bold mb-2">Language: </label>
                     <div class="dropdown" id="language-input">
                         <button 
                             class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center 
@@ -112,7 +102,7 @@
                 <div class="flex justify-center">
                     <div class="w-1/2">
                         <div class="mx-auto">
-                        <button style="width: 100%;" type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <button style="width: 100%;" type="submit" class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Submit
                         </button>
                         </div>
