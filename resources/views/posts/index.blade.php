@@ -245,8 +245,6 @@
                     creator.innerHTML += data[i].creators[j].name
                 }
 
-                console.log('pass')
-
                 // append the newly created elements to the parent element
                 parent.appendChild(title)
                 parent.appendChild(content)
